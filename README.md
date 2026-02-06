@@ -242,17 +242,9 @@ The implementation follows a 6-phase pipeline:
 
 **Key Insight:** VLMs excel at perception but are unreliable for complex rule-based reasoning. By extracting structured data from images and processing it with deterministic algorithms, the system achieves both accuracy and verifiability.
 
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Security
-
-Please review [SECURITY.md](SECURITY.md) for security best practices and reporting vulnerabilities.
 
 ## About Cascadia
 
