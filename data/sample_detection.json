@@ -1,0 +1,70 @@
+{
+  "description": "Sample manual detection data for testing the pipeline without VLM",
+  "notes": "Based on Card B bears (groups of 3), Card C salmon (3+ to score), Card B hawks (2+ to score)",
+  "players": [
+    {
+      "player_id": 1,
+      "player_name": "Player 1",
+      "nature_tokens": 2,
+      "tiles": [
+        {"id": "t1", "animal": "bear", "coord": {"q": 0, "r": 0}},
+        {"id": "t2", "animal": "bear", "coord": {"q": 1, "r": 0}},
+        {"id": "t3", "animal": "bear", "coord": {"q": 0, "r": 1}},
+        {"id": "t4", "animal": "elk", "coord": {"q": 3, "r": 0}},
+        {"id": "t5", "animal": "elk", "coord": {"q": 4, "r": 0}},
+        {"id": "t6", "animal": "elk", "coord": {"q": 5, "r": 0}},
+        {"id": "t7", "animal": "salmon", "coord": {"q": 0, "r": 3}},
+        {"id": "t8", "animal": "salmon", "coord": {"q": 1, "r": 3}},
+        {"id": "t9", "animal": "salmon", "coord": {"q": 2, "r": 3}},
+        {"id": "t10", "animal": "salmon", "coord": {"q": 3, "r": 3}},
+        {"id": "t11", "animal": "hawk", "coord": {"q": 7, "r": 7}},
+        {"id": "t12", "animal": "hawk", "coord": {"q": -3, "r": 5}},
+        {"id": "t13", "animal": "fox", "coord": {"q": 1, "r": 1}},
+        {"id": "t14", "animal": "fox", "coord": {"q": 4, "r": 1}}
+      ]
+    },
+    {
+      "player_id": 2,
+      "player_name": "Player 2",
+      "nature_tokens": 1,
+      "tiles": [
+        {"id": "t1", "animal": "bear", "coord": {"q": 0, "r": 0}},
+        {"id": "t2", "animal": "bear", "coord": {"q": 1, "r": 0}},
+        {"id": "t3", "animal": "bear", "coord": {"q": 0, "r": 1}},
+        {"id": "t4", "animal": "bear", "coord": {"q": 5, "r": 0}},
+        {"id": "t5", "animal": "bear", "coord": {"q": 6, "r": 0}},
+        {"id": "t6", "animal": "bear", "coord": {"q": 5, "r": 1}},
+        {"id": "t7", "animal": "elk", "coord": {"q": 0, "r": 3}},
+        {"id": "t8", "animal": "elk", "coord": {"q": 1, "r": 3}},
+        {"id": "t9", "animal": "salmon", "coord": {"q": 0, "r": 5}},
+        {"id": "t10", "animal": "salmon", "coord": {"q": 1, "r": 5}},
+        {"id": "t11", "animal": "salmon", "coord": {"q": 2, "r": 5}},
+        {"id": "t12", "animal": "salmon", "coord": {"q": 3, "r": 5}},
+        {"id": "t13", "animal": "salmon", "coord": {"q": 4, "r": 5}},
+        {"id": "t14", "animal": "hawk", "coord": {"q": -4, "r": 0}},
+        {"id": "t15", "animal": "hawk", "coord": {"q": 8, "r": 8}},
+        {"id": "t16", "animal": "hawk", "coord": {"q": -3, "r": 7}},
+        {"id": "t17", "animal": "fox", "coord": {"q": 0, "r": 4}}
+      ]
+    },
+    {
+      "player_id": 3,
+      "player_name": "Player 3",
+      "nature_tokens": 0,
+      "tiles": [
+        {"id": "t1", "animal": "bear", "coord": {"q": 0, "r": 0}},
+        {"id": "t2", "animal": "elk", "coord": {"q": 2, "r": 0}},
+        {"id": "t3", "animal": "elk", "coord": {"q": 3, "r": 0}},
+        {"id": "t4", "animal": "elk", "coord": {"q": 4, "r": 0}},
+        {"id": "t5", "animal": "elk", "coord": {"q": 5, "r": 0}},
+        {"id": "t6", "animal": "salmon", "coord": {"q": 0, "r": 3}},
+        {"id": "t7", "animal": "salmon", "coord": {"q": 1, "r": 3}},
+        {"id": "t8", "animal": "salmon", "coord": {"q": 2, "r": 3}},
+        {"id": "t9", "animal": "hawk", "coord": {"q": 7, "r": 7}},
+        {"id": "t10", "animal": "hawk", "coord": {"q": -4, "r": 5}},
+        {"id": "t11", "animal": "fox", "coord": {"q": 3, "r": 1}},
+        {"id": "t12", "animal": "fox", "coord": {"q": 1, "r": 4}}
+      ]
+    }
+  ]
+}

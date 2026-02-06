@@ -1,0 +1,96 @@
+{
+  "wildlife_scoring": {
+    "bear": {
+      "card_variant": "Card B - Mother and Cubs",
+      "description": "Score 10 points for groups of exactly 3 bears.",
+      "rules": {
+        "single": 0,
+        "pair": 0,
+        "group_of_3": 10,
+        "group_of_4_plus": 0,
+        "note": "Only groups of exactly 3 adjacent bears score. Singles, pairs, and groups of 4+ score 0."
+      },
+      "scoring_table": {
+        "group_size_1": 0,
+        "group_size_2": 0,
+        "group_size_3": 10,
+        "group_size_4_plus": 0
+      }
+    },
+    "elk": {
+      "card_variant": "Card B",
+      "description": "Score based on contiguous groups forming specific shapes.",
+      "rules": {
+        "shape": "straight_or_curved_line",
+        "note": "Elk score based on the size of their contiguous formation."
+      },
+      "scoring_table": {
+        "1_elk": 2,
+        "2_elk": 5,
+        "3_elk": 9,
+        "4_elk": 13
+      }
+    },
+    "salmon": {
+      "card_variant": "Card C",
+      "description": "Score based on run length. A run is a contiguous chain with no branches.",
+      "rules": {
+        "shape": "non_branching_chain",
+        "note": "Salmon must form runs (chains). Minimum 3 salmon to score. No loops or forks."
+      },
+      "scoring_table": {
+        "1_salmon": 0,
+        "2_salmon": 0,
+        "3_salmon": 10,
+        "4_salmon": 12,
+        "5_plus_salmon": 15
+      }
+    },
+    "hawk": {
+      "card_variant": "Card B",
+      "description": "Score based on total number of isolated hawks (not adjacent to other hawks).",
+      "rules": {
+        "condition": "isolated",
+        "note": "Only hawks that have no adjacent hawks score points."
+      },
+      "scoring_table": {
+        "1_hawk": 0,
+        "2_hawks": 5,
+        "3_hawks": 9,
+        "4_hawks": 12,
+        "5_hawks": 16,
+        "6_hawks": 20,
+        "7_hawks": 24
+      }
+    },
+    "fox": {
+      "description": "Score based on unique adjacent animal types.",
+      "rules": {
+        "condition": "adjacent_diversity",
+        "note": "Each fox scores points equal to the number of unique OTHER animal types adjacent to it."
+      },
+      "scoring_table": {
+        "0_unique": 0,
+        "1_unique": 1,
+        "2_unique": 2,
+        "3_unique": 3,
+        "4_unique": 4,
+        "5_unique": 5
+      }
+    }
+  },
+  "habitat_scoring": {
+    "description": "Bonus points for largest contiguous habitat areas.",
+    "habitat_types": ["forest", "river", "mountain", "prairie", "wetland"],
+    "rules": {
+      "largest_area_bonus": "Player with largest contiguous area of each habitat type gets bonus points.",
+      "tie_rule": "All tied players receive the bonus."
+    }
+  },
+  "nature_tokens": {
+    "description": "Leftover nature tokens at game end.",
+    "points_per_token": 1
+  },
+  "animals": ["bear", "elk", "salmon", "hawk", "fox"],
+  "habitats": ["forest", "river", "mountain", "prairie", "wetland"]
+}
